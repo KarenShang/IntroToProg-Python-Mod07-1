@@ -42,8 +42,7 @@ indicate a binary file.
 Then, I modified the read and write functions in the class
 **FileProcessor** to operate on a binary file instead of a text file.
 
-1.  **ReadFileDataToList** function now reads from a binary file and is
-    > very different from reading from a text file. I use **\"with\"
+1.  **ReadFileDataToList** function now reads from a binary file and is very different from reading from a text file. I use **\"with\"
     > construct, which automatically closes the file** when the code
     > reaches the end of the \"with\" block. Within the "with" block, an
     > infinite **"while"** loop is used to read one object (row of the
