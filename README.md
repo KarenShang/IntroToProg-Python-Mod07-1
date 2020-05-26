@@ -42,7 +42,7 @@ indicate a binary file.
 Then, I modified the read and write functions in the class
 **FileProcessor** to operate on a binary file instead of a text file.
 
-1.  **ReadFileDataToList** function now reads from a binary file and is very different from reading from a text file. I use **\"with\"
+1.  **ReadFileDataToList** function now reads from a binary file and is very different from reading from a text file. I use **\"with\"**
     > construct, which automatically closes the file** when the code
     > reaches the end of the \"with\" block. Within the "with" block, an
     > infinite **"while"** loop is used to read one object (row of the
@@ -74,8 +74,7 @@ with (open(file_name, "rb")) as objFile:
             print(e.__str__())
             break
 ```
-2.  **WriteListDataToFile** functions now writes the rows of the list
-    > table to a binary file. Similarly, a **"with"** construct is used
+2.  **WriteListDataToFile** functions now writes the rows of the list table to a binary file. Similarly, a **"with"** construct is used
     > to automatically close the file. Within the **"with"** block, a
     > for loop saves every row of the list table to the file using
     > **pickle.dump()** function.
@@ -87,8 +86,7 @@ with open(file_name, "wb") as objFile:
     for row in list_of_rows:
         pickle.dump(row, objFile)
 ```
-3.  **FindFile** function is not changed from assignment 06. I list it
-    > here to show that it also uses a "try-except" construct to capture
+3.  **FindFile** function is not changed from assignment 06. I list it here to show that it also uses a "try-except" construct to capture
     > the "file-not-found" exception to check whether the file exists or
     > not before the read. It fulfills part of the requirement of this
     > assignment.
