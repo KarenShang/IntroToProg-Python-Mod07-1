@@ -120,36 +120,33 @@ bbb, low
 
 ccc, low
 
-![](./media/image1.png) ####
-Figure 1. Script Run in Windows Shell and Option "2" Selection
+![](./media/image1.png)
+#### Figure 1. Script Run in Windows Shell and Option "2" Selection
 
 At this point, the results are shown in Figure 1.
 
 Then, option "4" is selected to save the list table to the binary file,
 and the operation is shown in Figure 2.
 
-![](./media/image2.png)#### 
-Figure 2. Option "4" to Save Data to File
+![](./media/image2.png)
+#### Figure 2. Option "4" to Save Data to File
 
 The file "ToDoFile.dat" is created in the current folder as shown in
 Figure 3 and the content of the file is shown in Figure 4 which shows a
 non-text content. The file should save all three tasks and we will prove
 it later by reading them into the memeory.
 
-![](./media/image3.png){width="6.36in" height="2.76in"}
+![](./media/image3.png)
+#### Figure 3. File "ToDoFile.dat" is Created
 
-Figure 3. File "ToDoFile.dat" is Created
-
-![](./media/image4.png){width="7.0in" height="1.1576388888888889in"}
-
-Figure 4. Content of the File "ToDoFile.dat"
+![](./media/image4.png)
+#### Figure 4. Content of the File "ToDoFile.dat"
 
 Now let's remove task "bbb" from the list as shown in Figure 5. At this
 point, there are two tasks left in the list.
 
-![](./media/image5.png){width="5.39in" height="4.12in"}
-
-Figure 5. Remove Task "bbb" from the List
+![](./media/image5.png)
+#### Figure 5. Remove Task "bbb" from the List
 
 Then select option "5" to prove that the list will become the previously
 saved version with all three tasks. Figure 5 shows the list now has
@@ -158,9 +155,8 @@ operation worked as expected. It also displayed the end-of-file
 exception messages we asked the code to print when all objects in the
 file are read. So the binary file read and write operate well.
 
-![](./media/image6.png){width="5.39in" height="4.85in"}
-
-Figure 6. Reading the Binary File and Exception Messages
+![](./media/image6.png)
+#### Figure 6. Reading the Binary File and Exception Messages
 
 The run tested the modifications I made to the code with pickling and
 error handling techniques.
