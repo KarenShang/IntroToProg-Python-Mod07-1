@@ -120,8 +120,7 @@ bbb, low
 
 ccc, low
 
-![](./media/image1.png){width="5.39in" height="4.12in"}
-
+![](./media/image1.png) ####
 Figure 1. Script Run in Windows Shell and Option "2" Selection
 
 At this point, the results are shown in Figure 1.
@@ -129,8 +128,7 @@ At this point, the results are shown in Figure 1.
 Then, option "4" is selected to save the list table to the binary file,
 and the operation is shown in Figure 2.
 
-![](./media/image2.png){width="5.39in" height="4.12in"}
-
+![](./media/image2.png)#### 
 Figure 2. Option "4" to Save Data to File
 
 The file "ToDoFile.dat" is created in the current folder as shown in
