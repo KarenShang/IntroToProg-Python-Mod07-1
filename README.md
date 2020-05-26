@@ -99,7 +99,8 @@ bbb, low
 
 ccc, low
 
-![](./media/image1.png)
+<!--- ![](./media/image1.png) --->
+<img src="./media/image1.png" width="600">
 #### Figure 1. Script Run in Windows Shell and Option "2" Selection
 
 At this point, the results are shown in Figure 1.
