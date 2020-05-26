@@ -41,7 +41,7 @@ indicate a binary file.
 
 Then, I modified the read and write functions in the class **FileProcessor** to operate on a binary file instead of a text file.
 
-1. **ReadFileDataToList** function now reads from a binary file and is very different from reading from a text file. I use **"with"** construct, which automatically closes the file** when the code reaches the end of the **"with"** block. Within the "with" block, an infinite **"while"** loop is used to read one object (row of the list table) a time and add the row to the list table until it reaches the end of the file. A **"try-except"** construct is utilized to capture the "end-of-file" error when that happens and **"breaks"** out of the **"while"** loop to stop reading the file. The binary read is done by **pickle.load()** function. When the "end-of-file" exception occurs, it prints a custom error message and the Python built-in error messages. A note about the return value of the function: because the list table is already passed in by reference, there is no need to return the list table. The reference to the list table already points to the updated list table.
+1\. **ReadFileDataToList** function now reads from a binary file and is very different from reading from a text file. I use **"with"** construct, which automatically closes the file** when the code reaches the end of the **"with"** block. Within the "with" block, an infinite **"while"** loop is used to read one object (row of the list table) a time and add the row to the list table until it reaches the end of the file. A **"try-except"** construct is utilized to capture the "end-of-file" error when that happens and **"breaks"** out of the **"while"** loop to stop reading the file. The binary read is done by **pickle.load()** function. When the "end-of-file" exception occurs, it prints a custom error message and the Python built-in error messages. A note about the return value of the function: because the list table is already passed in by reference, there is no need to return the list table. The reference to the list table already points to the updated list table.
 ```
 @staticmethod
 def ReadFileDataToList(file_name, list_of_rows):
@@ -59,7 +59,7 @@ with (open(file_name, "rb")) as objFile:
             print(e.__str__())
             break
 ```
-2. **WriteListDataToFile** functions now writes the rows of the list table to a binary file. Similarly, a **"with"** construct is used to automatically close the file. Within the **"with"** block, a for loop saves every row of the list table to the file using **pickle.dump()** function.
+2\. **WriteListDataToFile** functions now writes the rows of the list table to a binary file. Similarly, a **"with"** construct is used to automatically close the file. Within the **"with"** block, a for loop saves every row of the list table to the file using **pickle.dump()** function.
 ```
 @staticmethod
 def WriteListDataToFile(file_name, list_of_rows):
@@ -68,7 +68,7 @@ with open(file_name, "wb") as objFile:
     for row in list_of_rows:
         pickle.dump(row, objFile)
 ```
-3. **FindFile** function is not changed from assignment 06. I list it here to show that it also uses a "try-except" construct to capture the "file-not-found" exception to check whether the file exists or not before the read. It fulfills part of the requirement of this assignment.
+3\. **FindFile** function is not changed from assignment 06. I list it here to show that it also uses a "try-except" construct to capture the "file-not-found" exception to check whether the file exists or not before the read. It fulfills part of the requirement of this assignment.
 ```
 @staticmethod
 def FindFile(file_name):
