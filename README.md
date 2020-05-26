@@ -93,14 +93,11 @@ this is the very first time this script is run, the file "ToDoFile.dat"
 doesn't exist yet. To add some rows in the table, option "2" is selected
 several times to add the following tasks and priorities:
 
-aaa, high
-
-bbb, low
-
+aaa, high  
+bbb, low  
 ccc, low
 
-<!--- ![](./media/image1.png) --->
-<img src="./media/image1.png" width="600">
+![](./media/image1.png)
 #### Figure 1. Script Run in Windows Shell and Option "2" Selection
 
 At this point, the results are shown in Figure 1.
